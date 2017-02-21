@@ -54,7 +54,7 @@ class TuioPoint {
         xpos = 0.0;
         ypos = 0.0;
         currentTime = TuioTime.getSessionTime() // TuioTime.getSessionTime();
-        startTime = TuioTime(time: currentTime) //new TuioTime(currentTime);
+        startTime = TuioTime(ttime: currentTime) //new TuioTime(currentTime);
     }
     
     
@@ -69,7 +69,7 @@ class TuioPoint {
         xpos = xp;
         ypos = yp;
         currentTime = TuioTime.getSessionTime();
-        startTime =  TuioTime(time: currentTime);
+        startTime =  TuioTime(ttime: currentTime);
     }
     
     
@@ -86,7 +86,7 @@ class TuioPoint {
         xpos = tpoint.getX();
         ypos = tpoint.getY();
         currentTime = TuioTime.getSessionTime();
-        startTime =  TuioTime(time: currentTime);
+        startTime =  TuioTime(ttime: currentTime);
     }
     
     /**
@@ -100,8 +100,8 @@ class TuioPoint {
     init( ttime: TuioTime,  xp:Float,  yp:Float) {
         xpos = xp;
         ypos = yp;
-        currentTime =  TuioTime(time: ttime);
-        startTime =  TuioTime(time: currentTime);
+        currentTime =  TuioTime(ttime: ttime);
+        startTime =  TuioTime(ttime: currentTime);
     }
     
     
@@ -139,7 +139,7 @@ class TuioPoint {
     func update( ttime: TuioTime,  xp:Float,  yp:Float) {
         xpos = xp;
         ypos = yp;
-        currentTime =  TuioTime(time: ttime);
+        currentTime =  TuioTime(ttime: ttime);
     }
     
     /**
@@ -268,7 +268,7 @@ class TuioPoint {
      * @return	the time stamp of this TuioPoint as TuioTime
      */
     func getTuioTime() -> TuioTime{
-        return  TuioTime(time: currentTime);
+        return  TuioTime(ttime: currentTime);
     }
     
     /**
@@ -277,6 +277,6 @@ class TuioPoint {
      * @return	the start time of this TuioPoint as TuioTime
      */
     func getStartTime() -> TuioTime{
-        return  TuioTime(time: startTime);
+        return  TuioTime(ttime: startTime);
     }
 }
