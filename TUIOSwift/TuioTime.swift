@@ -7,7 +7,20 @@
 //
 
 import Foundation
-import Darwin
+
+
+/**
+ * The TuioTime class is a simple structure that is used to reprent the time that has elapsed since the session start.
+ * The time is internally represented as seconds and fractions of microseconds which should be more than sufficient for gesture related timing requirements.
+ * Therefore at the beginning of a typical TUIO session the static method initSession() will set the reference time for the session.
+ * Another important static method getSessionTime will return a TuioTime object representing the time elapsed since the session start.
+ * The class also provides various addtional convience method, which allow some simple time arithmetics.
+ *
+ * @author Mirko Fetter
+ * @version 0.9
+ *
+ * 1:1 Swift port of the TUIO 1.1 Java Library by Martin Kaltenbrunner
+ */
 
 class TuioTime {
     
@@ -253,7 +266,7 @@ class TuioTime {
         mach_timebase_info(&timeBaseInfo)
         let elapsedNano = (time * UInt64(timeBaseInfo.numer) / UInt64(timeBaseInfo.denom))/1000;
         let usec:CLong =  CLong(elapsedNano);
-       //--
+        //--
         return  TuioTime(sec: usec/1000000,usec: usec%1000000);
     }
     
@@ -262,14 +275,14 @@ class TuioTime {
      * @param  f_id	the Frame ID to associate
      */
     func setFrameID( f_id:CLong) {
-    frame_id=f_id;
+        frame_id=f_id;
     }
     
     /**
      * Returns the Frame ID associated to this TuioTime.
      * @return the Frame ID associated to this TuioTime
-     */	
+     */
     func getFrameID() -> CLong {
-    return frame_id;
+        return frame_id;
     }
 }

@@ -16,7 +16,7 @@ import Foundation
  * @author Mirko Fetter
  * @version 0.9
  *
- * Swift Implementation of
+ * 1:1 Swift port of the TUIO 1.1 Java Library by Martin Kaltenbrunner
  */
 
 class TuioPoint {
