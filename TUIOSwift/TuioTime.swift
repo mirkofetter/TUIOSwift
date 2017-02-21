@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Darwin
 
 class TuioTime {
     
@@ -22,7 +23,7 @@ class TuioTime {
     /**
      * the session start time in seconds
      */
-    internal static var   start_seconds:CLong = 0;
+    internal static var  start_seconds:CLong = 0;
     /**
      * start time fraction in microseconds
      */
@@ -61,7 +62,7 @@ class TuioTime {
      * @param  usec	the microseconds time component
      */
     
-    init ( sec:CLong, usec:CLong) {
+    init (sec:CLong, usec:CLong) {
         self.seconds = sec;
         self.micro_seconds = usec;
     }
@@ -105,8 +106,76 @@ class TuioTime {
     }
     
     
+    /**
+     * Sums the provided TuioTime to the private Seconds and Microseconds attributes.
+     *
+     * @param  ttime	the TuioTime to add
+     * @return the sum of this TuioTime with the provided TuioTime argument
+     */
+    func add( ttime: TuioTime) -> TuioTime{
+        var sec:CLong = seconds + ttime.getSeconds();
+        var usec:CLong = micro_seconds + ttime.getMicroseconds();
+        sec += usec/1000000;
+        usec = usec%1000000;
+        return  TuioTime(sec:sec,usec:usec);
+    }
     
     
+    
+    
+    
+    
+    /**
+     * Subtracts the provided time represented in Microseconds from the private Seconds and Microseconds attributes.
+     *
+     * @param  us	the total time to subtract in Microseconds
+     * @return the subtraction result of this TuioTime minus the provided time in Microseconds
+     */
+    func subtract(us:CLong) -> TuioTime{
+        var sec:CLong = seconds - us/1000000;
+        var usec:CLong = micro_seconds - us%1000000;
+        
+        if (usec<0) {
+            usec += 1000000;
+            sec-=1;
+        }
+        
+        return  TuioTime(sec:sec,usec:usec);
+    }
+    
+    /**
+     * Subtracts the provided TuioTime from the private Seconds and Microseconds attributes.
+     *
+     * @param  ttime	the TuioTime to subtract
+     * @return the subtraction result of this TuioTime minus the provided TuioTime
+     */
+    func subtract( ttime: TuioTime) -> TuioTime{
+        var sec:CLong = seconds - ttime.getSeconds();
+        var usec:CLong = micro_seconds - ttime.getMicroseconds();
+        
+        if (usec<0) {
+            usec += 1000000;
+            sec-=1;
+        }
+        
+        return  TuioTime(sec:sec,usec:usec);
+    }
+    
+    
+    /**
+     * Takes a TuioTime argument and compares the provided TuioTime to the private Seconds and Microseconds attributes.
+     *
+     * @param  ttime	the TuioTime to compare
+     * @return true if the two TuioTime have equal Seconds and Microseconds attributes
+     */
+    func equals( ttime: TuioTime) -> Bool{
+        if ((seconds==ttime.getSeconds()) && (micro_seconds==ttime.getMicroseconds())) {
+            return true;
+        }else {
+            return false;
+            
+        }
+    }
     
     /**
      * Resets the seconds and micro_seconds attributes to zero.
@@ -132,7 +201,75 @@ class TuioTime {
         return micro_seconds;
     }
     
+    
+    
+    /**
+     * Returns the total TuioTime in Milliseconds.
+     * @return the total TuioTime in Milliseconds
+     */
+    func getTotalMilliseconds()-> CLong{
+        return seconds*1000+micro_seconds/1000;
+    }
+    
+    /**
+     * This static method globally resets the TUIO session time.
+     */
+    static func initSession() {
+        let startTime:TuioTime = getSystemTime();
+        start_seconds = startTime.getSeconds();
+        start_micro_seconds = startTime.getMicroseconds();
+    }
+    
+    /**
+     * Returns the present TuioTime representing the time since session start.
+     * @return the present TuioTime representing the time since session start
+     */
+    
     static func getSessionTime()->TuioTime{
-        return TuioTime()
+        let sessionTime:TuioTime = getSystemTime().subtract(ttime: getStartTime());
+        return sessionTime;
+    }
+    
+    
+    
+    
+    /**
+     * Returns the absolut TuioTime representing the session start.
+     * @return the absolut TuioTime representing the session start
+     */
+    static func getStartTime()->TuioTime{
+        return TuioTime(sec: self.start_seconds, usec: self.start_micro_seconds)
+    }
+    
+    /**
+     * Returns the absolut TuioTime representing the current system time.
+     * @return the absolut TuioTime representing the current system time
+     */
+    static func getSystemTime()->TuioTime{
+        //ToDo check if this equals Java 	long usec = System.nanoTime()/1000;
+        //--
+        let time = mach_absolute_time();
+        var timeBaseInfo = mach_timebase_info_data_t()
+        mach_timebase_info(&timeBaseInfo)
+        let elapsedNano = (time * UInt64(timeBaseInfo.numer) / UInt64(timeBaseInfo.denom))/1000;
+        let usec:CLong =  CLong(elapsedNano);
+       //--
+        return  TuioTime(sec: usec/1000000,usec: usec%1000000);
+    }
+    
+    /**
+     * associates a Frame ID to this TuioTime.
+     * @param  f_id	the Frame ID to associate
+     */
+    func setFrameID( f_id:CLong) {
+    frame_id=f_id;
+    }
+    
+    /**
+     * Returns the Frame ID associated to this TuioTime.
+     * @return the Frame ID associated to this TuioTime
+     */	
+    func getFrameID() -> CLong {
+    return frame_id;
     }
 }
