@@ -12,6 +12,8 @@
 		AC34F3561E5C6051007C0ABF /* TUIOSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = AC34F3481E5C6051007C0ABF /* TUIOSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC34F3601E5C60B4007C0ABF /* TuioPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34F35F1E5C60B4007C0ABF /* TuioPoint.swift */; };
 		AC34F3621E5C615D007C0ABF /* TuioTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34F3611E5C615D007C0ABF /* TuioTime.swift */; };
+		AC4EAC8E1E5C97E900B6882B /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EAC8D1E5C97E900B6882B /* Queue.swift */; };
+		ACA8D1BC1E5C8BB300546145 /* TuioContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D1BB1E5C8BB300546145 /* TuioContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		AC34F3551E5C6051007C0ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC34F35F1E5C60B4007C0ABF /* TuioPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioPoint.swift; sourceTree = "<group>"; };
 		AC34F3611E5C615D007C0ABF /* TuioTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioTime.swift; sourceTree = "<group>"; };
+		AC4EAC8D1E5C97E900B6882B /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		ACA8D1BB1E5C8BB300546145 /* TuioContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				AC34F3491E5C6051007C0ABF /* Info.plist */,
 				AC34F35F1E5C60B4007C0ABF /* TuioPoint.swift */,
 				AC34F3611E5C615D007C0ABF /* TuioTime.swift */,
+				ACA8D1BB1E5C8BB300546145 /* TuioContainer.swift */,
+				AC4EAC8D1E5C97E900B6882B /* Queue.swift */,
 			);
 			path = TUIOSwift;
 			sourceTree = "<group>";
@@ -206,7 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC34F3601E5C60B4007C0ABF /* TuioPoint.swift in Sources */,
+				ACA8D1BC1E5C8BB300546145 /* TuioContainer.swift in Sources */,
 				AC34F3621E5C615D007C0ABF /* TuioTime.swift in Sources */,
+				AC4EAC8E1E5C97E900B6882B /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
