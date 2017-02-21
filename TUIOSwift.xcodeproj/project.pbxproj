@@ -13,6 +13,10 @@
 		AC34F3601E5C60B4007C0ABF /* TuioPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34F35F1E5C60B4007C0ABF /* TuioPoint.swift */; };
 		AC34F3621E5C615D007C0ABF /* TuioTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34F3611E5C615D007C0ABF /* TuioTime.swift */; };
 		AC4EAC8E1E5C97E900B6882B /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EAC8D1E5C97E900B6882B /* Queue.swift */; };
+		AC4EAC901E5CB0C700B6882B /* TuioListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EAC8F1E5CB0C700B6882B /* TuioListener.swift */; };
+		AC4EAC921E5CB1C900B6882B /* TuioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EAC911E5CB1C900B6882B /* TuioObject.swift */; };
+		AC4EAC941E5CB1ED00B6882B /* TuioCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EAC931E5CB1ED00B6882B /* TuioCursor.swift */; };
+		AC4EAC961E5CB20400B6882B /* TuioBlob.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EAC951E5CB20400B6882B /* TuioBlob.swift */; };
 		ACA8D1BC1E5C8BB300546145 /* TuioContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D1BB1E5C8BB300546145 /* TuioContainer.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +40,10 @@
 		AC34F35F1E5C60B4007C0ABF /* TuioPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioPoint.swift; sourceTree = "<group>"; };
 		AC34F3611E5C615D007C0ABF /* TuioTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioTime.swift; sourceTree = "<group>"; };
 		AC4EAC8D1E5C97E900B6882B /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		AC4EAC8F1E5CB0C700B6882B /* TuioListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioListener.swift; sourceTree = "<group>"; };
+		AC4EAC911E5CB1C900B6882B /* TuioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioObject.swift; sourceTree = "<group>"; };
+		AC4EAC931E5CB1ED00B6882B /* TuioCursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioCursor.swift; sourceTree = "<group>"; };
+		AC4EAC951E5CB20400B6882B /* TuioBlob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioBlob.swift; sourceTree = "<group>"; };
 		ACA8D1BB1E5C8BB300546145 /* TuioContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +93,10 @@
 				AC34F3611E5C615D007C0ABF /* TuioTime.swift */,
 				ACA8D1BB1E5C8BB300546145 /* TuioContainer.swift */,
 				AC4EAC8D1E5C97E900B6882B /* Queue.swift */,
+				AC4EAC8F1E5CB0C700B6882B /* TuioListener.swift */,
+				AC4EAC951E5CB20400B6882B /* TuioBlob.swift */,
+				AC4EAC931E5CB1ED00B6882B /* TuioCursor.swift */,
+				AC4EAC911E5CB1C900B6882B /* TuioObject.swift */,
 			);
 			path = TUIOSwift;
 			sourceTree = "<group>";
@@ -211,10 +223,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4EAC941E5CB1ED00B6882B /* TuioCursor.swift in Sources */,
+				AC4EAC961E5CB20400B6882B /* TuioBlob.swift in Sources */,
 				AC34F3601E5C60B4007C0ABF /* TuioPoint.swift in Sources */,
+				AC4EAC921E5CB1C900B6882B /* TuioObject.swift in Sources */,
 				ACA8D1BC1E5C8BB300546145 /* TuioContainer.swift in Sources */,
 				AC34F3621E5C615D007C0ABF /* TuioTime.swift in Sources */,
 				AC4EAC8E1E5C97E900B6882B /* Queue.swift in Sources */,
+				AC4EAC901E5CB0C700B6882B /* TuioListener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
