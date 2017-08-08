@@ -298,25 +298,35 @@ class TUIOClient: F53OSCPacketDestination {
                 }
             } else  if (command  == "alive"){
                 
-                //
-                //            newObjectList.clear();
-                //            for (int i=1;i<args.length;i++) {
-                //                // get the message content
-                //                long s_id = ((Integer)args[i]).longValue();
-                //                newObjectList.addElement(s_id);
-                //                // reduce the object list to the lost objects
-                //                if (aliveObjectList.contains(s_id))
-                //                aliveObjectList.removeElement(s_id);
-                //            }
+                newObjectList.removeAll();
+               
+                
+                for i in 1 ..< args.count  {
+                    // get the message content
+                    let s_id:CLong = args[i] as! CLong;
+                    
+                    newObjectList.append(s_id);
+                    // reduce the object list to the lost objects
+                    if (aliveObjectList.contains(s_id)){
+                        aliveObjectList.delete(element: s_id);
+                    }
+                }
                 //
                 //            // remove the remaining objects
-                //            for (int i=0;i<aliveObjectList.size();i++) {
-                //                TuioObject removeObject = objectList.get(aliveObjectList.elementAt(i));
-                //                if (removeObject==null) continue;
-                //                removeObject.remove(currentTime);
-                //                frameObjects.addElement(removeObject);
-                //            }
-                //
+                
+                for i in 0 ..< aliveObjectList.count{
+                    
+                    let removeObject:TuioObject =  objectList[aliveObjectList[i]]!;
+                    
+                    
+                    if (!(removeObject==nil)) {
+                        removeObject.remove(ttime: currentTime!);
+                        frameObjects.append(removeObject)
+                    }
+
+                    
+                }
+                
                 
             } else  if (command  == "fseq"){
                 
@@ -338,57 +348,57 @@ class TUIOClient: F53OSCPacketDestination {
                 }
                 
                 
-                //
-                //            if (!lateFrame) {
-                //                Enumeration<TuioObject> frameEnum = frameObjects.elements();
-                //                while(frameEnum.hasMoreElements()) {
-                //                    TuioObject tobj = frameEnum.nextElement();
-                //
-                //                    switch (tobj.getTuioState()) {
-                //                    case TuioObject.TUIO_REMOVED:
-                //                        TuioObject removeObject = tobj;
-                //                        removeObject.remove(currentTime);
-                //                        for (int i=0;i<listenerList.size();i++) {
-                //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
-                //                            if (listener!=null) listener.removeTuioObject(removeObject);
-                //                        }
-                //                        objectList.remove(removeObject.getSessionID());
-                //                        break;
-                //
-                //                    case TuioObject.TUIO_ADDED:
-                //                        TuioObject addObject = new TuioObject(currentTime,tobj.getSessionID(),tobj.getSymbolID(),tobj.getX(),tobj.getY(),tobj.getAngle());
-                //                        objectList.put(addObject.getSessionID(),addObject);
-                //                        for (int i=0;i<listenerList.size();i++) {
-                //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
-                //                            if (listener!=null) listener.addTuioObject(addObject);
-                //                        }
-                //                        break;
-                //
-                //                    default:
-                //                        TuioObject updateObject = objectList.get(tobj.getSessionID());
-                //                        if ( (tobj.getX()!=updateObject.getX() && tobj.getXSpeed()==0) || (tobj.getY()!=updateObject.getY() && tobj.getYSpeed()==0) )
-                //                        updateObject.update(currentTime,tobj.getX(),tobj.getY(),tobj.getAngle());
-                //                        else
-                //                        updateObject.update(currentTime,tobj.getX(),tobj.getY(),tobj.getAngle(),tobj.getXSpeed(),tobj.getYSpeed(),tobj.getRotationSpeed(),tobj.getMotionAccel(),tobj.getRotationAccel());
-                //
-                //                        for (int i=0;i<listenerList.size();i++) {
-                //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
-                //                            if (listener!=null) listener.updateTuioObject(updateObject);
-                //                        }
-                //                    }
-                //                }
-                //
-                //                for (int i=0;i<listenerList.size();i++) {
-                //                    TuioListener listener = (TuioListener)listenerList.elementAt(i);
-                //                    if (listener!=null) listener.refresh(new TuioTime(currentTime,fseq));
-                //                }
-                //
-                //                Vector<Long> buffer = aliveObjectList;
-                //                aliveObjectList = newObjectList;
-                //                // recycling the vector
-                //                newObjectList = buffer;
-                //            }
-                //            frameObjects.clear();
+                
+                if (!lateFrame) {
+                    //                Enumeration<TuioObject> frameEnum = frameObjects.elements();
+                    //                while(frameEnum.hasMoreElements()) {
+                    //                    TuioObject tobj = frameEnum.nextElement();
+                    //
+                    //                    switch (tobj.getTuioState()) {
+                    //                    case TuioObject.TUIO_REMOVED:
+                    //                        TuioObject removeObject = tobj;
+                    //                        removeObject.remove(currentTime);
+                    //                        for (int i=0;i<listenerList.size();i++) {
+                    //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
+                    //                            if (listener!=null) listener.removeTuioObject(removeObject);
+                    //                        }
+                    //                        objectList.remove(removeObject.getSessionID());
+                    //                        break;
+                    //
+                    //                    case TuioObject.TUIO_ADDED:
+                    //                        TuioObject addObject = new TuioObject(currentTime,tobj.getSessionID(),tobj.getSymbolID(),tobj.getX(),tobj.getY(),tobj.getAngle());
+                    //                        objectList.put(addObject.getSessionID(),addObject);
+                    //                        for (int i=0;i<listenerList.size();i++) {
+                    //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
+                    //                            if (listener!=null) listener.addTuioObject(addObject);
+                    //                        }
+                    //                        break;
+                    //
+                    //                    default:
+                    //                        TuioObject updateObject = objectList.get(tobj.getSessionID());
+                    //                        if ( (tobj.getX()!=updateObject.getX() && tobj.getXSpeed()==0) || (tobj.getY()!=updateObject.getY() && tobj.getYSpeed()==0) )
+                    //                        updateObject.update(currentTime,tobj.getX(),tobj.getY(),tobj.getAngle());
+                    //                        else
+                    //                        updateObject.update(currentTime,tobj.getX(),tobj.getY(),tobj.getAngle(),tobj.getXSpeed(),tobj.getYSpeed(),tobj.getRotationSpeed(),tobj.getMotionAccel(),tobj.getRotationAccel());
+                    //
+                    //                        for (int i=0;i<listenerList.size();i++) {
+                    //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
+                    //                            if (listener!=null) listener.updateTuioObject(updateObject);
+                    //                        }
+                    //                    }
+                    //                }
+                    //
+                    //                for (int i=0;i<listenerList.size();i++) {
+                    //                    TuioListener listener = (TuioListener)listenerList.elementAt(i);
+                    //                    if (listener!=null) listener.refresh(new TuioTime(currentTime,fseq));
+                    //                }
+                    //
+                    //                Vector<Long> buffer = aliveObjectList;
+                    //                aliveObjectList = newObjectList;
+                    //                // recycling the vector
+                    //                newObjectList = buffer;
+                }
+                frameObjects.removeAll();
             }
             
             //-------------------Handle 2Dcur---------------------------
@@ -437,9 +447,7 @@ class TUIOClient: F53OSCPacketDestination {
                     newCursorList.append(s_id)
                     
                     // reduce the cursor list to the lost cursors
-                    if let index = aliveCursorList.index(of: s_id) {
-                        aliveCursorList.remove(at: index)
-                    }
+                    aliveCursorList.delete(element: s_id)
                     
                     
                 }
@@ -663,102 +671,106 @@ class TUIOClient: F53OSCPacketDestination {
                     currentTime = TuioTime.getSessionTime();
                 }
                 
-                //
-                //            if (!lateFrame) {
-                //
-                //                Enumeration<TuioBlob> frameEnum = frameBlobs.elements();
-                //                while(frameEnum.hasMoreElements()) {
-                //                    TuioBlob tblb = frameEnum.nextElement();
-                //
-                //                    switch (tblb.getTuioState()) {
-                //                    case TuioBlob.TUIO_REMOVED:
-                //
-                //                        TuioBlob removeBlob = tblb;
-                //                        removeBlob.remove(currentTime);
-                //
-                //                        for (int i=0;i<listenerList.size();i++) {
-                //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
-                //                            if (listener!=null) listener.removeTuioBlob(removeBlob);
-                //                        }
-                //
-                //                        blobList.remove(removeBlob.getSessionID());
-                //
-                //                        if (removeBlob.getBlobID()==maxBlobID) {
-                //                            maxBlobID = -1;
-                //                            if (blobList.size()>0) {
-                //                                Enumeration<TuioBlob> blist = blobList.elements();
-                //                                while (blist.hasMoreElements()) {
-                //                                    int b_id = blist.nextElement().getBlobID();
-                //                                    if (b_id>maxBlobID) maxBlobID=b_id;
-                //                                }
-                //
-                //                                Enumeration<TuioBlob> flist = freeBlobList.elements();
-                //                                while (flist.hasMoreElements()) {
-                //                                    TuioBlob fblb = flist.nextElement();
-                //                                    if (fblb.getBlobID()>=maxBlobID) freeBlobList.removeElement(fblb);
-                //                                }
-                //                            } else freeBlobList.clear();
-                //                        } else if (removeBlob.getBlobID()<maxBlobID) {
-                //                            freeBlobList.addElement(removeBlob);
-                //                        }
-                //
-                //                        break;
-                //
-                //                    case TuioBlob.TUIO_ADDED:
-                //
-                //                        int b_id = blobList.size();
-                //                        if ((blobList.size()<=maxBlobID) && (freeBlobList.size()>0)) {
-                //                            TuioBlob closestBlob = freeBlobList.firstElement();
-                //                            Enumeration<TuioBlob> testList = freeBlobList.elements();
-                //                            while (testList.hasMoreElements()) {
-                //                                TuioBlob testBlob = testList.nextElement();
-                //                                if (testBlob.getDistance(tblb)<closestBlob.getDistance(tblb)) closestBlob = testBlob;
-                //                            }
-                //                            b_id = closestBlob.getBlobID();
-                //                            freeBlobList.removeElement(closestBlob);
-                //                        } else maxBlobID = b_id;
-                //
-                //                        TuioBlob addBlob = new TuioBlob(currentTime,tblb.getSessionID(),b_id,tblb.getX(),tblb.getY(),tblb.getAngle(),tblb.getWidth(),tblb.getHeight(),tblb.getArea());
-                //                        blobList.put(addBlob.getSessionID(),addBlob);
-                //
-                //                        for (int i=0;i<listenerList.size();i++) {
-                //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
-                //                            if (listener!=null) listener.addTuioBlob(addBlob);
-                //                        }
-                //                        break;
-                //
-                //                    default:
-                //
-                //                        TuioBlob updateBlob = blobList.get(tblb.getSessionID());
-                //                        if ( (tblb.getX()!=updateBlob.getX() && tblb.getXSpeed()==0) || (tblb.getY()!=updateBlob.getY() && tblb.getYSpeed()==0) )
-                //                        updateBlob.update(currentTime,tblb.getX(),tblb.getY(),tblb.getAngle(),tblb.getWidth(),tblb.getHeight(),tblb.getArea());
-                //                        else
-                //                        updateBlob.update(currentTime,tblb.getX(),tblb.getY(),tblb.getAngle(),tblb.getWidth(),tblb.getHeight(),tblb.getArea(),tblb.getXSpeed(),tblb.getYSpeed(),tblb.getRotationSpeed(),tblb.getMotionAccel(),tblb.getRotationAccel());
-                //
-                //                        for (int i=0;i<listenerList.size();i++) {
-                //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
-                //                            if (listener!=null) listener.updateTuioBlob(updateBlob);
-                //                        }
-                //                    }
-                //                }
-                //
-                //                for (int i=0;i<listenerList.size();i++) {
-                //                    TuioListener listener = (TuioListener)listenerList.elementAt(i);
-                //                    if (listener!=null) listener.refresh(new TuioTime(currentTime,fseq));
-                //                }
-                //
-                //                Vector<Long> buffer = aliveBlobList;
-                //                aliveBlobList = newBlobList;
-                //                // recycling the vector
-                //                newBlobList = buffer;
-                //            }
-                //
-                //            frameBlobs.clear();
-                //        }
+                if (!lateFrame) {
+                    //
+                    //                Enumeration<TuioBlob> frameEnum = frameBlobs.elements();
+                    //                while(frameEnum.hasMoreElements()) {
+                    //                    TuioBlob tblb = frameEnum.nextElement();
+                    //
+                    //                    switch (tblb.getTuioState()) {
+                    //                    case TuioBlob.TUIO_REMOVED:
+                    //
+                    //                        TuioBlob removeBlob = tblb;
+                    //                        removeBlob.remove(currentTime);
+                    //
+                    //                        for (int i=0;i<listenerList.size();i++) {
+                    //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
+                    //                            if (listener!=null) listener.removeTuioBlob(removeBlob);
+                    //                        }
+                    //
+                    //                        blobList.remove(removeBlob.getSessionID());
+                    //
+                    //                        if (removeBlob.getBlobID()==maxBlobID) {
+                    //                            maxBlobID = -1;
+                    //                            if (blobList.size()>0) {
+                    //                                Enumeration<TuioBlob> blist = blobList.elements();
+                    //                                while (blist.hasMoreElements()) {
+                    //                                    int b_id = blist.nextElement().getBlobID();
+                    //                                    if (b_id>maxBlobID) maxBlobID=b_id;
+                    //                                }
+                    //
+                    //                                Enumeration<TuioBlob> flist = freeBlobList.elements();
+                    //                                while (flist.hasMoreElements()) {
+                    //                                    TuioBlob fblb = flist.nextElement();
+                    //                                    if (fblb.getBlobID()>=maxBlobID) freeBlobList.removeElement(fblb);
+                    //                                }
+                    //                            } else freeBlobList.clear();
+                    //                        } else if (removeBlob.getBlobID()<maxBlobID) {
+                    //                            freeBlobList.addElement(removeBlob);
+                    //                        }
+                    //
+                    //                        break;
+                    //
+                    //                    case TuioBlob.TUIO_ADDED:
+                    //
+                    //                        int b_id = blobList.size();
+                    //                        if ((blobList.size()<=maxBlobID) && (freeBlobList.size()>0)) {
+                    //                            TuioBlob closestBlob = freeBlobList.firstElement();
+                    //                            Enumeration<TuioBlob> testList = freeBlobList.elements();
+                    //                            while (testList.hasMoreElements()) {
+                    //                                TuioBlob testBlob = testList.nextElement();
+                    //                                if (testBlob.getDistance(tblb)<closestBlob.getDistance(tblb)) closestBlob = testBlob;
+                    //                            }
+                    //                            b_id = closestBlob.getBlobID();
+                    //                            freeBlobList.removeElement(closestBlob);
+                    //                        } else maxBlobID = b_id;
+                    //
+                    //                        TuioBlob addBlob = new TuioBlob(currentTime,tblb.getSessionID(),b_id,tblb.getX(),tblb.getY(),tblb.getAngle(),tblb.getWidth(),tblb.getHeight(),tblb.getArea());
+                    //                        blobList.put(addBlob.getSessionID(),addBlob);
+                    //
+                    //                        for (int i=0;i<listenerList.size();i++) {
+                    //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
+                    //                            if (listener!=null) listener.addTuioBlob(addBlob);
+                    //                        }
+                    //                        break;
+                    //
+                    //                    default:
+                    //
+                    //                        TuioBlob updateBlob = blobList.get(tblb.getSessionID());
+                    //                        if ( (tblb.getX()!=updateBlob.getX() && tblb.getXSpeed()==0) || (tblb.getY()!=updateBlob.getY() && tblb.getYSpeed()==0) )
+                    //                        updateBlob.update(currentTime,tblb.getX(),tblb.getY(),tblb.getAngle(),tblb.getWidth(),tblb.getHeight(),tblb.getArea());
+                    //                        else
+                    //                        updateBlob.update(currentTime,tblb.getX(),tblb.getY(),tblb.getAngle(),tblb.getWidth(),tblb.getHeight(),tblb.getArea(),tblb.getXSpeed(),tblb.getYSpeed(),tblb.getRotationSpeed(),tblb.getMotionAccel(),tblb.getRotationAccel());
+                    //
+                    //                        for (int i=0;i<listenerList.size();i++) {
+                    //                            TuioListener listener = (TuioListener)listenerList.elementAt(i);
+                    //                            if (listener!=null) listener.updateTuioBlob(updateBlob);
+                    //                        }
+                    //                    }
+                    //                }
+                    //
+                    //                for (int i=0;i<listenerList.size();i++) {
+                    //                    TuioListener listener = (TuioListener)listenerList.elementAt(i);
+                    //                    if (listener!=null) listener.refresh(new TuioTime(currentTime,fseq));
+                    //                }
+                    //
+                    //                Vector<Long> buffer = aliveBlobList;
+                    //                aliveBlobList = newBlobList;
+                    //                // recycling the vector
+                    //                newBlobList = buffer;
+                    //            }
+                    //
+                    frameBlobs.removeAll();
+                }
                 //
                 //    }
                 //}
             }
         }
+    }
+}
+extension Array where Element: Equatable  {
+    mutating func delete(element: Iterator.Element) {
+        self = self.filter{$0 != element }
     }
 }

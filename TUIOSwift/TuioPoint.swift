@@ -26,12 +26,10 @@ class TuioPoint {
      * X coordinate, representated as a floating point value in a range of 0..1
      */
       var xpos:Float;
-    //protected float xpos;
     /**
      * Y coordinate, representated as a floating point value in a range of 0..1
      */
      var ypos:Float;
-    //protected float ypos;
     /**
      * The time stamp of the last update represented as TuioTime (time since session start)
      */
@@ -42,7 +40,6 @@ class TuioPoint {
      */
     
      var startTime:TuioTime;
-    //protected TuioTime startTime;
     
     /**
      * The default constructor takes no arguments and sets
