@@ -25,23 +25,23 @@ class TuioPoint {
     /**
      * X coordinate, representated as a floating point value in a range of 0..1
      */
-    internal var xpos:Float;
+      var xpos:Float;
     //protected float xpos;
     /**
      * Y coordinate, representated as a floating point value in a range of 0..1
      */
-    internal var ypos:Float;
+     var ypos:Float;
     //protected float ypos;
     /**
      * The time stamp of the last update represented as TuioTime (time since session start)
      */
-    internal var currentTime:TuioTime;
+     var currentTime:TuioTime;
     //protected TuioTime currentTime;
     /**
      * The creation time of this TuioPoint represented as TuioTime (time since session start)
      */
     
-    internal var startTime:TuioTime;
+     var startTime:TuioTime;
     //protected TuioTime startTime;
     
     /**
@@ -51,10 +51,10 @@ class TuioPoint {
     
     init() {
         //New Instance initialization goes here
-        xpos = 0.0;
-        ypos = 0.0;
-        currentTime = TuioTime.getSessionTime() // TuioTime.getSessionTime();
-        startTime = TuioTime(ttime: currentTime) //new TuioTime(currentTime);
+        self.xpos = 0.0;
+        self.ypos = 0.0;
+        self.currentTime = TuioTime.getSessionTime() // TuioTime.getSessionTime();
+        self.startTime = TuioTime(ttime: currentTime) //new TuioTime(currentTime);
     }
     
     
@@ -66,10 +66,10 @@ class TuioPoint {
      * @param	yp	the Y coordinate to assign
      */
     init( xp:Float,  yp:Float) {
-        xpos = xp;
-        ypos = yp;
-        currentTime = TuioTime.getSessionTime();
-        startTime =  TuioTime(ttime: currentTime);
+        self.xpos = xp;
+        self.ypos = yp;
+        self.currentTime = TuioTime.getSessionTime();
+        self.startTime =  TuioTime(ttime: currentTime);
     }
     
     
@@ -83,10 +83,10 @@ class TuioPoint {
     
     
     init( tpoint:TuioPoint) {
-        xpos = tpoint.getX();
-        ypos = tpoint.getY();
-        currentTime = TuioTime.getSessionTime();
-        startTime =  TuioTime(ttime: currentTime);
+        self.xpos = tpoint.getX();
+        self.ypos = tpoint.getY();
+        self.currentTime = TuioTime.getSessionTime();
+        self.startTime =  TuioTime(ttime: currentTime);
     }
     
     /**
@@ -98,10 +98,10 @@ class TuioPoint {
      * @param	yp	the Y coordinate to assign
      */
     init( ttime: TuioTime,  xp:Float,  yp:Float) {
-        xpos = xp;
-        ypos = yp;
-        currentTime =  TuioTime(ttime: ttime);
-        startTime =  TuioTime(ttime: currentTime);
+        self.xpos = xp;
+        self.ypos = yp;
+        self.currentTime =  TuioTime(ttime: ttime);
+        self.startTime =  TuioTime(ttime: currentTime);
     }
     
     
@@ -112,8 +112,8 @@ class TuioPoint {
      * @param	tpoint	the TuioPoint to assign
      */
     func update(tpoint:TuioPoint) {
-        xpos = tpoint.getX();
-        ypos = tpoint.getY();
+        self.xpos = tpoint.getX();
+        self.ypos = tpoint.getY();
     }
     
     /**

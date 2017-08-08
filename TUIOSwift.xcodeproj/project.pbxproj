@@ -7,89 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC34F34F1E5C6051007C0ABF /* TUIOSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC34F3451E5C6051007C0ABF /* TUIOSwift.framework */; };
-		AC34F3541E5C6051007C0ABF /* TUIOSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34F3531E5C6051007C0ABF /* TUIOSwiftTests.swift */; };
-		AC34F3561E5C6051007C0ABF /* TUIOSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = AC34F3481E5C6051007C0ABF /* TUIOSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ACA3B0A01E5F3E6B00AE8C30 /* TUIOSwift-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = ACA3B09F1E5F3E6B00AE8C30 /* TUIOSwift-Bridging-Header.h */; };
-		ACEE99811E5F250F006A28D7 /* TUIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99661E5F1ADE006A28D7 /* TUIOClient.swift */; };
-		ACEE99821E5F250F006A28D7 /* TuioPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34F35F1E5C60B4007C0ABF /* TuioPoint.swift */; };
-		ACEE99831E5F250F006A28D7 /* TuioTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34F3611E5C615D007C0ABF /* TuioTime.swift */; };
-		ACEE99841E5F250F006A28D7 /* TuioContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8D1BB1E5C8BB300546145 /* TuioContainer.swift */; };
-		ACEE99851E5F250F006A28D7 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EAC8D1E5C97E900B6882B /* Queue.swift */; };
-		ACEE99861E5F250F006A28D7 /* TuioListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EAC8F1E5CB0C700B6882B /* TuioListener.swift */; };
-		ACEE99871E5F250F006A28D7 /* TuioBlob.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EAC951E5CB20400B6882B /* TuioBlob.swift */; };
-		ACEE99881E5F250F006A28D7 /* TuioCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EAC931E5CB1ED00B6882B /* TuioCursor.swift */; };
-		ACEE99891E5F250F006A28D7 /* TuioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4EAC911E5CB1C900B6882B /* TuioObject.swift */; };
-		ACEE998A1E5F250F006A28D7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99391E5EEE12006A28D7 /* main.swift */; };
-		ACEE998B1E5F2525006A28D7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99391E5EEE12006A28D7 /* main.swift */; };
-		ACEE9A021E5F25F9006A28D7 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E21E5F25F9006A28D7 /* GCDAsyncSocket.m */; };
-		ACEE9A031E5F25F9006A28D7 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E21E5F25F9006A28D7 /* GCDAsyncSocket.m */; };
-		ACEE9A041E5F25F9006A28D7 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E31E5F25F9006A28D7 /* GCDAsyncUdpSocket.m */; };
-		ACEE9A051E5F25F9006A28D7 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E31E5F25F9006A28D7 /* GCDAsyncUdpSocket.m */; };
-		ACEE9A061E5F25F9006A28D7 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99E41E5F25F9006A28D7 /* GCDAsyncSocket.h */; };
-		ACEE9A071E5F25F9006A28D7 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99E51E5F25F9006A28D7 /* GCDAsyncUdpSocket.h */; };
-		ACEE9A081E5F25F9006A28D7 /* F53OSCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E61E5F25F9006A28D7 /* F53OSCParser.m */; };
-		ACEE9A091E5F25F9006A28D7 /* F53OSCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E61E5F25F9006A28D7 /* F53OSCParser.m */; };
-		ACEE9A0A1E5F25F9006A28D7 /* F53OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E71E5F25F9006A28D7 /* F53OSCMessage.m */; };
-		ACEE9A0B1E5F25F9006A28D7 /* F53OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E71E5F25F9006A28D7 /* F53OSCMessage.m */; };
-		ACEE9A0C1E5F25F9006A28D7 /* F53OSCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E81E5F25F9006A28D7 /* F53OSCServer.m */; };
-		ACEE9A0D1E5F25F9006A28D7 /* F53OSCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E81E5F25F9006A28D7 /* F53OSCServer.m */; };
-		ACEE9A0E1E5F25F9006A28D7 /* F53OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E91E5F25F9006A28D7 /* F53OSCClient.m */; };
-		ACEE9A0F1E5F25F9006A28D7 /* F53OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99E91E5F25F9006A28D7 /* F53OSCClient.m */; };
-		ACEE9A101E5F25F9006A28D7 /* F53OSCSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99EA1E5F25F9006A28D7 /* F53OSCSocket.m */; };
-		ACEE9A111E5F25F9006A28D7 /* F53OSCSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99EA1E5F25F9006A28D7 /* F53OSCSocket.m */; };
-		ACEE9A121E5F25F9006A28D7 /* F53OSCMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99EB1E5F25F9006A28D7 /* F53OSCMessage.h */; };
-		ACEE9A131E5F25F9006A28D7 /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99EC1E5F25F9006A28D7 /* NSData+F53OSCBlob.m */; };
-		ACEE9A141E5F25F9006A28D7 /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99EC1E5F25F9006A28D7 /* NSData+F53OSCBlob.m */; };
-		ACEE9A151E5F25F9006A28D7 /* NSString+F53OSCString.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99ED1E5F25F9006A28D7 /* NSString+F53OSCString.m */; };
-		ACEE9A161E5F25F9006A28D7 /* NSString+F53OSCString.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99ED1E5F25F9006A28D7 /* NSString+F53OSCString.m */; };
-		ACEE9A171E5F25F9006A28D7 /* F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99EE1E5F25F9006A28D7 /* F53OSCTimeTag.m */; };
-		ACEE9A181E5F25F9006A28D7 /* F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99EE1E5F25F9006A28D7 /* F53OSCTimeTag.m */; };
-		ACEE9A191E5F25F9006A28D7 /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99EF1E5F25F9006A28D7 /* F53OSCBundle.m */; };
-		ACEE9A1A1E5F25F9006A28D7 /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99EF1E5F25F9006A28D7 /* F53OSCBundle.m */; };
-		ACEE9A1B1E5F25F9006A28D7 /* F53OSCClient.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99F01E5F25F9006A28D7 /* F53OSCClient.h */; };
-		ACEE9A1C1E5F25F9006A28D7 /* F53OSCServer.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99F11E5F25F9006A28D7 /* F53OSCServer.h */; };
-		ACEE9A1D1E5F25F9006A28D7 /* F53OSCSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99F21E5F25F9006A28D7 /* F53OSCSocket.h */; };
-		ACEE9A1E1E5F25F9006A28D7 /* NSNumber+F53OSCNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99F31E5F25F9006A28D7 /* NSNumber+F53OSCNumber.m */; };
-		ACEE9A1F1E5F25F9006A28D7 /* NSNumber+F53OSCNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99F31E5F25F9006A28D7 /* NSNumber+F53OSCNumber.m */; };
-		ACEE9A201E5F25F9006A28D7 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99F41E5F25F9006A28D7 /* README.markdown */; };
-		ACEE9A211E5F25F9006A28D7 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99F41E5F25F9006A28D7 /* README.markdown */; };
-		ACEE9A221E5F25F9006A28D7 /* F53OSCBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99F51E5F25F9006A28D7 /* F53OSCBundle.h */; };
-		ACEE9A231E5F25F9006A28D7 /* F53OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99F61E5F25F9006A28D7 /* F53OSCPacket.m */; };
-		ACEE9A241E5F25F9006A28D7 /* F53OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99F61E5F25F9006A28D7 /* F53OSCPacket.m */; };
-		ACEE9A251E5F25F9006A28D7 /* F53OSCParser.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99F71E5F25F9006A28D7 /* F53OSCParser.h */; };
-		ACEE9A261E5F25F9006A28D7 /* F53OSCTimeTag.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99F81E5F25F9006A28D7 /* F53OSCTimeTag.h */; };
-		ACEE9A271E5F25F9006A28D7 /* NSNumber+F53OSCNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99F91E5F25F9006A28D7 /* NSNumber+F53OSCNumber.h */; };
-		ACEE9A281E5F25F9006A28D7 /* F53OSCPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99FA1E5F25F9006A28D7 /* F53OSCPacket.h */; };
-		ACEE9A291E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99FB1E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.m */; };
-		ACEE9A2A1E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEE99FB1E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.m */; };
-		ACEE9A2B1E5F25F9006A28D7 /* NSString+F53OSCString.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99FC1E5F25F9006A28D7 /* NSString+F53OSCString.h */; };
-		ACEE9A2C1E5F25F9006A28D7 /* NSData+F53OSCBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99FD1E5F25F9006A28D7 /* NSData+F53OSCBlob.h */; };
-		ACEE9A2D1E5F25F9006A28D7 /* F53OSC.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99FE1E5F25F9006A28D7 /* F53OSC.h */; };
-		ACEE9A2E1E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE99FF1E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.h */; };
-		ACEE9A2F1E5F25F9006A28D7 /* F53OSCFoundationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE9A001E5F25F9006A28D7 /* F53OSCFoundationAdditions.h */; };
-		ACEE9A301E5F25F9006A28D7 /* F53OSCProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEE9A011E5F25F9006A28D7 /* F53OSCProtocols.h */; };
+		AC4D44A71E65717A0062105C /* TuioPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D449F1E65717A0062105C /* TuioPoint.swift */; };
+		AC4D44A81E65717A0062105C /* TuioTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44A01E65717A0062105C /* TuioTime.swift */; };
+		AC4D44A91E65717A0062105C /* TuioContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44A11E65717A0062105C /* TuioContainer.swift */; };
+		AC4D44AA1E65717A0062105C /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44A21E65717A0062105C /* Queue.swift */; };
+		AC4D44AB1E65717A0062105C /* TuioListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44A31E65717A0062105C /* TuioListener.swift */; };
+		AC4D44AC1E65717A0062105C /* TuioBlob.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44A41E65717A0062105C /* TuioBlob.swift */; };
+		AC4D44AD1E65717A0062105C /* TuioCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44A51E65717A0062105C /* TuioCursor.swift */; };
+		AC4D44AE1E65717A0062105C /* TuioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44A61E65717A0062105C /* TuioObject.swift */; };
+		AC4D44B01E65755E0062105C /* TUIOServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44AF1E65755E0062105C /* TUIOServer.swift */; };
+		AC4D44B21E6578E80062105C /* Tangible.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44B11E6578E80062105C /* Tangible.swift */; };
+		AC4D44B41E657AC20062105C /* Point2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44B31E657AC20062105C /* Point2D.swift */; };
+		AC4D44B71E659F160062105C /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44B61E659F160062105C /* Manager.swift */; };
+		AC4D44B91E65A0430062105C /* Finger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D44B81E65A0430062105C /* Finger.swift */; };
+		ACA3B0601E5F344300AE8C30 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B05F1E5F344300AE8C30 /* main.swift */; };
+		ACA3B08A1E5F346300AE8C30 /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0691E5F346300AE8C30 /* F53OSCBundle.m */; };
+		ACA3B08B1E5F346300AE8C30 /* F53OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B06B1E5F346300AE8C30 /* F53OSCClient.m */; };
+		ACA3B08C1E5F346300AE8C30 /* F53OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B06E1E5F346300AE8C30 /* F53OSCMessage.m */; };
+		ACA3B08D1E5F346300AE8C30 /* F53OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0701E5F346300AE8C30 /* F53OSCPacket.m */; };
+		ACA3B08E1E5F346300AE8C30 /* F53OSCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0721E5F346300AE8C30 /* F53OSCParser.m */; };
+		ACA3B08F1E5F346300AE8C30 /* F53OSCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0751E5F346300AE8C30 /* F53OSCServer.m */; };
+		ACA3B0901E5F346300AE8C30 /* F53OSCSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0771E5F346300AE8C30 /* F53OSCSocket.m */; };
+		ACA3B0911E5F346300AE8C30 /* F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0791E5F346300AE8C30 /* F53OSCTimeTag.m */; };
+		ACA3B0921E5F346300AE8C30 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B07B1E5F346300AE8C30 /* GCDAsyncSocket.m */; };
+		ACA3B0931E5F346300AE8C30 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B07D1E5F346300AE8C30 /* GCDAsyncUdpSocket.m */; };
+		ACA3B0951E5F346300AE8C30 /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0821E5F346300AE8C30 /* NSData+F53OSCBlob.m */; };
+		ACA3B0961E5F346300AE8C30 /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0841E5F346300AE8C30 /* NSDate+F53OSCTimeTag.m */; };
+		ACA3B0971E5F346300AE8C30 /* NSNumber+F53OSCNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0861E5F346300AE8C30 /* NSNumber+F53OSCNumber.m */; };
+		ACA3B0981E5F346300AE8C30 /* NSString+F53OSCString.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0881E5F346300AE8C30 /* NSString+F53OSCString.m */; };
+		ACA3B0991E5F346300AE8C30 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0891E5F346300AE8C30 /* README.markdown */; };
+		ACA3B0A21E5F3FCC00AE8C30 /* TUIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3B0A11E5F3FCC00AE8C30 /* TUIOClient.swift */; };
+		ACF6F68E1EA6382200F3473C /* MyListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6F68D1EA6382200F3473C /* MyListener.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AC34F3501E5C6051007C0ABF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC34F33C1E5C6051007C0ABF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC34F3441E5C6051007C0ABF;
-			remoteInfo = TUIOSwift;
-		};
-		ACEE998C1E5F252F006A28D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC34F33C1E5C6051007C0ABF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC34F3441E5C6051007C0ABF;
-			remoteInfo = TUIOSwift;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		ACEE99351E5EEE12006A28D7 /* CopyFiles */ = {
+		ACA3B05A1E5F344300AE8C30 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -101,76 +53,61 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AC34F3451E5C6051007C0ABF /* TUIOSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TUIOSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC34F3481E5C6051007C0ABF /* TUIOSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TUIOSwift.h; sourceTree = "<group>"; };
-		AC34F3491E5C6051007C0ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC34F34E1E5C6051007C0ABF /* TUIOSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUIOSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC34F3531E5C6051007C0ABF /* TUIOSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUIOSwiftTests.swift; sourceTree = "<group>"; };
-		AC34F3551E5C6051007C0ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC34F35F1E5C60B4007C0ABF /* TuioPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioPoint.swift; sourceTree = "<group>"; };
-		AC34F3611E5C615D007C0ABF /* TuioTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioTime.swift; sourceTree = "<group>"; };
-		AC4EAC8D1E5C97E900B6882B /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		AC4EAC8F1E5CB0C700B6882B /* TuioListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioListener.swift; sourceTree = "<group>"; };
-		AC4EAC911E5CB1C900B6882B /* TuioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioObject.swift; sourceTree = "<group>"; };
-		AC4EAC931E5CB1ED00B6882B /* TuioCursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioCursor.swift; sourceTree = "<group>"; };
-		AC4EAC951E5CB20400B6882B /* TuioBlob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioBlob.swift; sourceTree = "<group>"; };
-		ACA3B09F1E5F3E6B00AE8C30 /* TUIOSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TUIOSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		ACA8D1BB1E5C8BB300546145 /* TuioContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioContainer.swift; sourceTree = "<group>"; };
-		ACEE99371E5EEE12006A28D7 /* ClientTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClientTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACEE99391E5EEE12006A28D7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../ClientTest/main.swift; sourceTree = "<group>"; };
-		ACEE99661E5F1ADE006A28D7 /* TUIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUIOClient.swift; sourceTree = SOURCE_ROOT; };
-		ACEE998E1E5F256E006A28D7 /* TUIOSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TUIOSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		ACEE99E21E5F25F9006A28D7 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		ACEE99E31E5F25F9006A28D7 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		ACEE99E41E5F25F9006A28D7 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
-		ACEE99E51E5F25F9006A28D7 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		ACEE99E61E5F25F9006A28D7 /* F53OSCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCParser.m; sourceTree = "<group>"; };
-		ACEE99E71E5F25F9006A28D7 /* F53OSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCMessage.m; sourceTree = "<group>"; };
-		ACEE99E81E5F25F9006A28D7 /* F53OSCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCServer.m; sourceTree = "<group>"; };
-		ACEE99E91E5F25F9006A28D7 /* F53OSCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCClient.m; sourceTree = "<group>"; };
-		ACEE99EA1E5F25F9006A28D7 /* F53OSCSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCSocket.m; sourceTree = "<group>"; };
-		ACEE99EB1E5F25F9006A28D7 /* F53OSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCMessage.h; sourceTree = "<group>"; };
-		ACEE99EC1E5F25F9006A28D7 /* NSData+F53OSCBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+F53OSCBlob.m"; sourceTree = "<group>"; };
-		ACEE99ED1E5F25F9006A28D7 /* NSString+F53OSCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+F53OSCString.m"; sourceTree = "<group>"; };
-		ACEE99EE1E5F25F9006A28D7 /* F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCTimeTag.m; sourceTree = "<group>"; };
-		ACEE99EF1E5F25F9006A28D7 /* F53OSCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCBundle.m; sourceTree = "<group>"; };
-		ACEE99F01E5F25F9006A28D7 /* F53OSCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCClient.h; sourceTree = "<group>"; };
-		ACEE99F11E5F25F9006A28D7 /* F53OSCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCServer.h; sourceTree = "<group>"; };
-		ACEE99F21E5F25F9006A28D7 /* F53OSCSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCSocket.h; sourceTree = "<group>"; };
-		ACEE99F31E5F25F9006A28D7 /* NSNumber+F53OSCNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+F53OSCNumber.m"; sourceTree = "<group>"; };
-		ACEE99F41E5F25F9006A28D7 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
-		ACEE99F51E5F25F9006A28D7 /* F53OSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCBundle.h; sourceTree = "<group>"; };
-		ACEE99F61E5F25F9006A28D7 /* F53OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCPacket.m; sourceTree = "<group>"; };
-		ACEE99F71E5F25F9006A28D7 /* F53OSCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCParser.h; sourceTree = "<group>"; };
-		ACEE99F81E5F25F9006A28D7 /* F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCTimeTag.h; sourceTree = "<group>"; };
-		ACEE99F91E5F25F9006A28D7 /* NSNumber+F53OSCNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+F53OSCNumber.h"; sourceTree = "<group>"; };
-		ACEE99FA1E5F25F9006A28D7 /* F53OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCPacket.h; sourceTree = "<group>"; };
-		ACEE99FB1E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+F53OSCTimeTag.m"; sourceTree = "<group>"; };
-		ACEE99FC1E5F25F9006A28D7 /* NSString+F53OSCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+F53OSCString.h"; sourceTree = "<group>"; };
-		ACEE99FD1E5F25F9006A28D7 /* NSData+F53OSCBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+F53OSCBlob.h"; sourceTree = "<group>"; };
-		ACEE99FE1E5F25F9006A28D7 /* F53OSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSC.h; sourceTree = "<group>"; };
-		ACEE99FF1E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+F53OSCTimeTag.h"; sourceTree = "<group>"; };
-		ACEE9A001E5F25F9006A28D7 /* F53OSCFoundationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCFoundationAdditions.h; sourceTree = "<group>"; };
-		ACEE9A011E5F25F9006A28D7 /* F53OSCProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCProtocols.h; sourceTree = "<group>"; };
+		AC4D449F1E65717A0062105C /* TuioPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioPoint.swift; sourceTree = "<group>"; };
+		AC4D44A01E65717A0062105C /* TuioTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioTime.swift; sourceTree = "<group>"; };
+		AC4D44A11E65717A0062105C /* TuioContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioContainer.swift; sourceTree = "<group>"; };
+		AC4D44A21E65717A0062105C /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		AC4D44A31E65717A0062105C /* TuioListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioListener.swift; sourceTree = "<group>"; };
+		AC4D44A41E65717A0062105C /* TuioBlob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioBlob.swift; sourceTree = "<group>"; };
+		AC4D44A51E65717A0062105C /* TuioCursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioCursor.swift; sourceTree = "<group>"; };
+		AC4D44A61E65717A0062105C /* TuioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuioObject.swift; sourceTree = "<group>"; };
+		AC4D44AF1E65755E0062105C /* TUIOServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUIOServer.swift; sourceTree = "<group>"; };
+		AC4D44B11E6578E80062105C /* Tangible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tangible.swift; sourceTree = "<group>"; };
+		AC4D44B31E657AC20062105C /* Point2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point2D.swift; sourceTree = "<group>"; };
+		AC4D44B61E659F160062105C /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		AC4D44B81E65A0430062105C /* Finger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Finger.swift; sourceTree = "<group>"; };
+		ACA3B05C1E5F344300AE8C30 /* TUIOSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TUIOSwift; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA3B05F1E5F344300AE8C30 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		ACA3B0681E5F346300AE8C30 /* F53OSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCBundle.h; sourceTree = "<group>"; };
+		ACA3B0691E5F346300AE8C30 /* F53OSCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCBundle.m; sourceTree = "<group>"; };
+		ACA3B06A1E5F346300AE8C30 /* F53OSCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCClient.h; sourceTree = "<group>"; };
+		ACA3B06B1E5F346300AE8C30 /* F53OSCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCClient.m; sourceTree = "<group>"; };
+		ACA3B06C1E5F346300AE8C30 /* F53OSCFoundationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCFoundationAdditions.h; sourceTree = "<group>"; };
+		ACA3B06D1E5F346300AE8C30 /* F53OSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCMessage.h; sourceTree = "<group>"; };
+		ACA3B06E1E5F346300AE8C30 /* F53OSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCMessage.m; sourceTree = "<group>"; };
+		ACA3B06F1E5F346300AE8C30 /* F53OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCPacket.h; sourceTree = "<group>"; };
+		ACA3B0701E5F346300AE8C30 /* F53OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCPacket.m; sourceTree = "<group>"; };
+		ACA3B0711E5F346300AE8C30 /* F53OSCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCParser.h; sourceTree = "<group>"; };
+		ACA3B0721E5F346300AE8C30 /* F53OSCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCParser.m; sourceTree = "<group>"; };
+		ACA3B0731E5F346300AE8C30 /* F53OSCProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCProtocols.h; sourceTree = "<group>"; };
+		ACA3B0741E5F346300AE8C30 /* F53OSCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCServer.h; sourceTree = "<group>"; };
+		ACA3B0751E5F346300AE8C30 /* F53OSCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCServer.m; sourceTree = "<group>"; };
+		ACA3B0761E5F346300AE8C30 /* F53OSCSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCSocket.h; sourceTree = "<group>"; };
+		ACA3B0771E5F346300AE8C30 /* F53OSCSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCSocket.m; sourceTree = "<group>"; };
+		ACA3B0781E5F346300AE8C30 /* F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCTimeTag.h; sourceTree = "<group>"; };
+		ACA3B0791E5F346300AE8C30 /* F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCTimeTag.m; sourceTree = "<group>"; };
+		ACA3B07A1E5F346300AE8C30 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		ACA3B07B1E5F346300AE8C30 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		ACA3B07C1E5F346300AE8C30 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		ACA3B07D1E5F346300AE8C30 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		ACA3B07E1E5F346300AE8C30 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		ACA3B0811E5F346300AE8C30 /* NSData+F53OSCBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+F53OSCBlob.h"; sourceTree = "<group>"; };
+		ACA3B0821E5F346300AE8C30 /* NSData+F53OSCBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+F53OSCBlob.m"; sourceTree = "<group>"; };
+		ACA3B0831E5F346300AE8C30 /* NSDate+F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+F53OSCTimeTag.h"; sourceTree = "<group>"; };
+		ACA3B0841E5F346300AE8C30 /* NSDate+F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+F53OSCTimeTag.m"; sourceTree = "<group>"; };
+		ACA3B0851E5F346300AE8C30 /* NSNumber+F53OSCNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+F53OSCNumber.h"; sourceTree = "<group>"; };
+		ACA3B0861E5F346300AE8C30 /* NSNumber+F53OSCNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+F53OSCNumber.m"; sourceTree = "<group>"; };
+		ACA3B0871E5F346300AE8C30 /* NSString+F53OSCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+F53OSCString.h"; sourceTree = "<group>"; };
+		ACA3B0881E5F346300AE8C30 /* NSString+F53OSCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+F53OSCString.m"; sourceTree = "<group>"; };
+		ACA3B0891E5F346300AE8C30 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		ACA3B09A1E5F34A600AE8C30 /* F53OSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSC.h; sourceTree = "<group>"; };
+		ACA3B09E1E5F3DE800AE8C30 /* TUIOSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TUIOSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		ACA3B0A11E5F3FCC00AE8C30 /* TUIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUIOClient.swift; sourceTree = "<group>"; };
+		ACF6F68D1EA6382200F3473C /* MyListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyListener.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AC34F3411E5C6051007C0ABF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC34F34B1E5C6051007C0ABF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC34F34F1E5C6051007C0ABF /* TUIOSwift.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACEE99341E5EEE12006A28D7 /* Frameworks */ = {
+		ACA3B0591E5F344300AE8C30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -180,143 +117,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AC34F33B1E5C6051007C0ABF = {
+		AC4D44B51E659EF40062105C /* Simulator */ = {
 			isa = PBXGroup;
 			children = (
-				AC34F3471E5C6051007C0ABF /* TUIOSwift */,
-				AC34F3521E5C6051007C0ABF /* TUIOSwiftTests */,
-				ACEE99381E5EEE12006A28D7 /* ClientTest */,
-				AC34F3461E5C6051007C0ABF /* Products */,
+				AC4D44AF1E65755E0062105C /* TUIOServer.swift */,
+				AC4D44B11E6578E80062105C /* Tangible.swift */,
+				AC4D44B81E65A0430062105C /* Finger.swift */,
+				AC4D44B31E657AC20062105C /* Point2D.swift */,
+				AC4D44B61E659F160062105C /* Manager.swift */,
+			);
+			name = Simulator;
+			sourceTree = "<group>";
+		};
+		ACA3B0531E5F344300AE8C30 = {
+			isa = PBXGroup;
+			children = (
+				ACA3B05E1E5F344300AE8C30 /* TUIOSwift */,
+				ACA3B05D1E5F344300AE8C30 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AC34F3461E5C6051007C0ABF /* Products */ = {
+		ACA3B05D1E5F344300AE8C30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC34F3451E5C6051007C0ABF /* TUIOSwift.framework */,
-				AC34F34E1E5C6051007C0ABF /* TUIOSwiftTests.xctest */,
-				ACEE99371E5EEE12006A28D7 /* ClientTest */,
+				ACA3B05C1E5F344300AE8C30 /* TUIOSwift */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC34F3471E5C6051007C0ABF /* TUIOSwift */ = {
+		ACA3B05E1E5F344300AE8C30 /* TUIOSwift */ = {
 			isa = PBXGroup;
 			children = (
-				ACA990411E5DF94C000A35FD /* MetatoneOSC */,
-				AC34F3481E5C6051007C0ABF /* TUIOSwift.h */,
-				ACEE99661E5F1ADE006A28D7 /* TUIOClient.swift */,
-				AC34F3491E5C6051007C0ABF /* Info.plist */,
-				AC34F35F1E5C60B4007C0ABF /* TuioPoint.swift */,
-				AC34F3611E5C615D007C0ABF /* TuioTime.swift */,
-				ACA8D1BB1E5C8BB300546145 /* TuioContainer.swift */,
-				AC4EAC8D1E5C97E900B6882B /* Queue.swift */,
-				AC4EAC8F1E5CB0C700B6882B /* TuioListener.swift */,
-				AC4EAC951E5CB20400B6882B /* TuioBlob.swift */,
-				AC4EAC931E5CB1ED00B6882B /* TuioCursor.swift */,
-				AC4EAC911E5CB1C900B6882B /* TuioObject.swift */,
-				ACEE99391E5EEE12006A28D7 /* main.swift */,
+				AC4D449F1E65717A0062105C /* TuioPoint.swift */,
+				AC4D44A01E65717A0062105C /* TuioTime.swift */,
+				AC4D44A11E65717A0062105C /* TuioContainer.swift */,
+				AC4D44A21E65717A0062105C /* Queue.swift */,
+				AC4D44A31E65717A0062105C /* TuioListener.swift */,
+				AC4D44A41E65717A0062105C /* TuioBlob.swift */,
+				AC4D44A51E65717A0062105C /* TuioCursor.swift */,
+				AC4D44A61E65717A0062105C /* TuioObject.swift */,
+				ACA3B0661E5F346300AE8C30 /* MetatoneOSC */,
+				ACA3B05F1E5F344300AE8C30 /* main.swift */,
+				ACF6F68D1EA6382200F3473C /* MyListener.swift */,
+				ACA3B0A11E5F3FCC00AE8C30 /* TUIOClient.swift */,
+				AC4D44B51E659EF40062105C /* Simulator */,
 			);
 			path = TUIOSwift;
 			sourceTree = "<group>";
 		};
-		AC34F3521E5C6051007C0ABF /* TUIOSwiftTests */ = {
+		ACA3B0661E5F346300AE8C30 /* MetatoneOSC */ = {
 			isa = PBXGroup;
 			children = (
-				AC34F3531E5C6051007C0ABF /* TUIOSwiftTests.swift */,
-				AC34F3551E5C6051007C0ABF /* Info.plist */,
-			);
-			path = TUIOSwiftTests;
-			sourceTree = "<group>";
-		};
-		ACA990411E5DF94C000A35FD /* MetatoneOSC */ = {
-			isa = PBXGroup;
-			children = (
-				ACA3B09F1E5F3E6B00AE8C30 /* TUIOSwift-Bridging-Header.h */,
-				ACEE99E21E5F25F9006A28D7 /* GCDAsyncSocket.m */,
-				ACEE99E31E5F25F9006A28D7 /* GCDAsyncUdpSocket.m */,
-				ACEE99E41E5F25F9006A28D7 /* GCDAsyncSocket.h */,
-				ACEE99E51E5F25F9006A28D7 /* GCDAsyncUdpSocket.h */,
-				ACEE99E61E5F25F9006A28D7 /* F53OSCParser.m */,
-				ACEE99E71E5F25F9006A28D7 /* F53OSCMessage.m */,
-				ACEE99E81E5F25F9006A28D7 /* F53OSCServer.m */,
-				ACEE99E91E5F25F9006A28D7 /* F53OSCClient.m */,
-				ACEE99EA1E5F25F9006A28D7 /* F53OSCSocket.m */,
-				ACEE99EB1E5F25F9006A28D7 /* F53OSCMessage.h */,
-				ACEE99EC1E5F25F9006A28D7 /* NSData+F53OSCBlob.m */,
-				ACEE99ED1E5F25F9006A28D7 /* NSString+F53OSCString.m */,
-				ACEE99EE1E5F25F9006A28D7 /* F53OSCTimeTag.m */,
-				ACEE99EF1E5F25F9006A28D7 /* F53OSCBundle.m */,
-				ACEE99F01E5F25F9006A28D7 /* F53OSCClient.h */,
-				ACEE99F11E5F25F9006A28D7 /* F53OSCServer.h */,
-				ACEE99F21E5F25F9006A28D7 /* F53OSCSocket.h */,
-				ACEE99F31E5F25F9006A28D7 /* NSNumber+F53OSCNumber.m */,
-				ACEE99F41E5F25F9006A28D7 /* README.markdown */,
-				ACEE99F51E5F25F9006A28D7 /* F53OSCBundle.h */,
-				ACEE99F61E5F25F9006A28D7 /* F53OSCPacket.m */,
-				ACEE99F71E5F25F9006A28D7 /* F53OSCParser.h */,
-				ACEE99F81E5F25F9006A28D7 /* F53OSCTimeTag.h */,
-				ACEE99F91E5F25F9006A28D7 /* NSNumber+F53OSCNumber.h */,
-				ACEE99FA1E5F25F9006A28D7 /* F53OSCPacket.h */,
-				ACEE99FB1E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.m */,
-				ACEE99FC1E5F25F9006A28D7 /* NSString+F53OSCString.h */,
-				ACEE99FD1E5F25F9006A28D7 /* NSData+F53OSCBlob.h */,
-				ACEE99FE1E5F25F9006A28D7 /* F53OSC.h */,
-				ACEE99FF1E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.h */,
-				ACEE9A001E5F25F9006A28D7 /* F53OSCFoundationAdditions.h */,
-				ACEE9A011E5F25F9006A28D7 /* F53OSCProtocols.h */,
-				ACEE998E1E5F256E006A28D7 /* TUIOSwift-Bridging-Header.h */,
+				ACA3B09E1E5F3DE800AE8C30 /* TUIOSwift-Bridging-Header.h */,
+				ACA3B09A1E5F34A600AE8C30 /* F53OSC.h */,
+				ACA3B0681E5F346300AE8C30 /* F53OSCBundle.h */,
+				ACA3B0691E5F346300AE8C30 /* F53OSCBundle.m */,
+				ACA3B06A1E5F346300AE8C30 /* F53OSCClient.h */,
+				ACA3B06B1E5F346300AE8C30 /* F53OSCClient.m */,
+				ACA3B06C1E5F346300AE8C30 /* F53OSCFoundationAdditions.h */,
+				ACA3B06D1E5F346300AE8C30 /* F53OSCMessage.h */,
+				ACA3B06E1E5F346300AE8C30 /* F53OSCMessage.m */,
+				ACA3B06F1E5F346300AE8C30 /* F53OSCPacket.h */,
+				ACA3B0701E5F346300AE8C30 /* F53OSCPacket.m */,
+				ACA3B0711E5F346300AE8C30 /* F53OSCParser.h */,
+				ACA3B0721E5F346300AE8C30 /* F53OSCParser.m */,
+				ACA3B0731E5F346300AE8C30 /* F53OSCProtocols.h */,
+				ACA3B0741E5F346300AE8C30 /* F53OSCServer.h */,
+				ACA3B0751E5F346300AE8C30 /* F53OSCServer.m */,
+				ACA3B0761E5F346300AE8C30 /* F53OSCSocket.h */,
+				ACA3B0771E5F346300AE8C30 /* F53OSCSocket.m */,
+				ACA3B0781E5F346300AE8C30 /* F53OSCTimeTag.h */,
+				ACA3B0791E5F346300AE8C30 /* F53OSCTimeTag.m */,
+				ACA3B07A1E5F346300AE8C30 /* GCDAsyncSocket.h */,
+				ACA3B07B1E5F346300AE8C30 /* GCDAsyncSocket.m */,
+				ACA3B07C1E5F346300AE8C30 /* GCDAsyncUdpSocket.h */,
+				ACA3B07D1E5F346300AE8C30 /* GCDAsyncUdpSocket.m */,
+				ACA3B07E1E5F346300AE8C30 /* LICENSE.txt */,
+				ACA3B0811E5F346300AE8C30 /* NSData+F53OSCBlob.h */,
+				ACA3B0821E5F346300AE8C30 /* NSData+F53OSCBlob.m */,
+				ACA3B0831E5F346300AE8C30 /* NSDate+F53OSCTimeTag.h */,
+				ACA3B0841E5F346300AE8C30 /* NSDate+F53OSCTimeTag.m */,
+				ACA3B0851E5F346300AE8C30 /* NSNumber+F53OSCNumber.h */,
+				ACA3B0861E5F346300AE8C30 /* NSNumber+F53OSCNumber.m */,
+				ACA3B0871E5F346300AE8C30 /* NSString+F53OSCString.h */,
+				ACA3B0881E5F346300AE8C30 /* NSString+F53OSCString.m */,
+				ACA3B0891E5F346300AE8C30 /* README.markdown */,
 			);
 			path = MetatoneOSC;
 			sourceTree = "<group>";
 		};
-		ACEE99381E5EEE12006A28D7 /* ClientTest */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ClientTest;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		AC34F3421E5C6051007C0ABF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACEE9A251E5F25F9006A28D7 /* F53OSCParser.h in Headers */,
-				ACEE9A1C1E5F25F9006A28D7 /* F53OSCServer.h in Headers */,
-				ACEE9A221E5F25F9006A28D7 /* F53OSCBundle.h in Headers */,
-				ACEE9A281E5F25F9006A28D7 /* F53OSCPacket.h in Headers */,
-				ACA3B0A01E5F3E6B00AE8C30 /* TUIOSwift-Bridging-Header.h in Headers */,
-				ACEE9A2E1E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.h in Headers */,
-				ACEE9A261E5F25F9006A28D7 /* F53OSCTimeTag.h in Headers */,
-				ACEE9A2F1E5F25F9006A28D7 /* F53OSCFoundationAdditions.h in Headers */,
-				ACEE9A2D1E5F25F9006A28D7 /* F53OSC.h in Headers */,
-				AC34F3561E5C6051007C0ABF /* TUIOSwift.h in Headers */,
-				ACEE9A121E5F25F9006A28D7 /* F53OSCMessage.h in Headers */,
-				ACEE9A071E5F25F9006A28D7 /* GCDAsyncUdpSocket.h in Headers */,
-				ACEE9A301E5F25F9006A28D7 /* F53OSCProtocols.h in Headers */,
-				ACEE9A1B1E5F25F9006A28D7 /* F53OSCClient.h in Headers */,
-				ACEE9A2B1E5F25F9006A28D7 /* NSString+F53OSCString.h in Headers */,
-				ACEE9A061E5F25F9006A28D7 /* GCDAsyncSocket.h in Headers */,
-				ACEE9A2C1E5F25F9006A28D7 /* NSData+F53OSCBlob.h in Headers */,
-				ACEE9A271E5F25F9006A28D7 /* NSNumber+F53OSCNumber.h in Headers */,
-				ACEE9A1D1E5F25F9006A28D7 /* F53OSCSocket.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		AC34F3441E5C6051007C0ABF /* TUIOSwift */ = {
+		ACA3B05B1E5F344300AE8C30 /* TUIOSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC34F3591E5C6051007C0ABF /* Build configuration list for PBXNativeTarget "TUIOSwift" */;
+			buildConfigurationList = ACA3B0631E5F344300AE8C30 /* Build configuration list for PBXNativeTarget "TUIOSwift" */;
 			buildPhases = (
-				AC34F3401E5C6051007C0ABF /* Sources */,
-				AC34F3411E5C6051007C0ABF /* Frameworks */,
-				AC34F3421E5C6051007C0ABF /* Headers */,
-				AC34F3431E5C6051007C0ABF /* Resources */,
+				ACA3B0581E5F344300AE8C30 /* Sources */,
+				ACA3B0591E5F344300AE8C30 /* Frameworks */,
+				ACA3B05A1E5F344300AE8C30 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -324,191 +223,86 @@
 			);
 			name = TUIOSwift;
 			productName = TUIOSwift;
-			productReference = AC34F3451E5C6051007C0ABF /* TUIOSwift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AC34F34D1E5C6051007C0ABF /* TUIOSwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC34F35C1E5C6051007C0ABF /* Build configuration list for PBXNativeTarget "TUIOSwiftTests" */;
-			buildPhases = (
-				AC34F34A1E5C6051007C0ABF /* Sources */,
-				AC34F34B1E5C6051007C0ABF /* Frameworks */,
-				AC34F34C1E5C6051007C0ABF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC34F3511E5C6051007C0ABF /* PBXTargetDependency */,
-			);
-			name = TUIOSwiftTests;
-			productName = TUIOSwiftTests;
-			productReference = AC34F34E1E5C6051007C0ABF /* TUIOSwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		ACEE99361E5EEE12006A28D7 /* ClientTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACEE993B1E5EEE12006A28D7 /* Build configuration list for PBXNativeTarget "ClientTest" */;
-			buildPhases = (
-				ACEE99331E5EEE12006A28D7 /* Sources */,
-				ACEE99341E5EEE12006A28D7 /* Frameworks */,
-				ACEE99351E5EEE12006A28D7 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACEE998D1E5F252F006A28D7 /* PBXTargetDependency */,
-			);
-			name = ClientTest;
-			productName = ClientTest;
-			productReference = ACEE99371E5EEE12006A28D7 /* ClientTest */;
+			productReference = ACA3B05C1E5F344300AE8C30 /* TUIOSwift */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AC34F33C1E5C6051007C0ABF /* Project object */ = {
+		ACA3B0541E5F344300AE8C30 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = grugru;
 				TargetAttributes = {
-					AC34F3441E5C6051007C0ABF = {
+					ACA3B05B1E5F344300AE8C30 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = J649878CHW;
-						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
-					};
-					AC34F34D1E5C6051007C0ABF = {
-						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = J649878CHW;
-						ProvisioningStyle = Automatic;
-					};
-					ACEE99361E5EEE12006A28D7 = {
-						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = J649878CHW;
-						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = AC34F33F1E5C6051007C0ABF /* Build configuration list for PBXProject "TUIOSwift" */;
+			buildConfigurationList = ACA3B0571E5F344300AE8C30 /* Build configuration list for PBXProject "TUIOSwift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = AC34F33B1E5C6051007C0ABF;
-			productRefGroup = AC34F3461E5C6051007C0ABF /* Products */;
+			mainGroup = ACA3B0531E5F344300AE8C30;
+			productRefGroup = ACA3B05D1E5F344300AE8C30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC34F3441E5C6051007C0ABF /* TUIOSwift */,
-				AC34F34D1E5C6051007C0ABF /* TUIOSwiftTests */,
-				ACEE99361E5EEE12006A28D7 /* ClientTest */,
+				ACA3B05B1E5F344300AE8C30 /* TUIOSwift */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		AC34F3431E5C6051007C0ABF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC34F34C1E5C6051007C0ABF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		AC34F3401E5C6051007C0ABF /* Sources */ = {
+		ACA3B0581E5F344300AE8C30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACEE9A151E5F25F9006A28D7 /* NSString+F53OSCString.m in Sources */,
-				ACEE9A131E5F25F9006A28D7 /* NSData+F53OSCBlob.m in Sources */,
-				ACEE99811E5F250F006A28D7 /* TUIOClient.swift in Sources */,
-				ACEE9A0C1E5F25F9006A28D7 /* F53OSCServer.m in Sources */,
-				ACEE9A231E5F25F9006A28D7 /* F53OSCPacket.m in Sources */,
-				ACEE99821E5F250F006A28D7 /* TuioPoint.swift in Sources */,
-				ACEE9A191E5F25F9006A28D7 /* F53OSCBundle.m in Sources */,
-				ACEE9A0A1E5F25F9006A28D7 /* F53OSCMessage.m in Sources */,
-				ACEE99831E5F250F006A28D7 /* TuioTime.swift in Sources */,
-				ACEE99841E5F250F006A28D7 /* TuioContainer.swift in Sources */,
-				ACEE9A171E5F25F9006A28D7 /* F53OSCTimeTag.m in Sources */,
-				ACEE9A081E5F25F9006A28D7 /* F53OSCParser.m in Sources */,
-				ACEE9A201E5F25F9006A28D7 /* README.markdown in Sources */,
-				ACEE9A041E5F25F9006A28D7 /* GCDAsyncUdpSocket.m in Sources */,
-				ACEE99851E5F250F006A28D7 /* Queue.swift in Sources */,
-				ACEE99861E5F250F006A28D7 /* TuioListener.swift in Sources */,
-				ACEE99871E5F250F006A28D7 /* TuioBlob.swift in Sources */,
-				ACEE9A0E1E5F25F9006A28D7 /* F53OSCClient.m in Sources */,
-				ACEE9A101E5F25F9006A28D7 /* F53OSCSocket.m in Sources */,
-				ACEE99881E5F250F006A28D7 /* TuioCursor.swift in Sources */,
-				ACEE99891E5F250F006A28D7 /* TuioObject.swift in Sources */,
-				ACEE9A021E5F25F9006A28D7 /* GCDAsyncSocket.m in Sources */,
-				ACEE998A1E5F250F006A28D7 /* main.swift in Sources */,
-				ACEE9A291E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.m in Sources */,
-				ACEE9A1E1E5F25F9006A28D7 /* NSNumber+F53OSCNumber.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC34F34A1E5C6051007C0ABF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC34F3541E5C6051007C0ABF /* TUIOSwiftTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACEE99331E5EEE12006A28D7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACEE9A181E5F25F9006A28D7 /* F53OSCTimeTag.m in Sources */,
-				ACEE9A141E5F25F9006A28D7 /* NSData+F53OSCBlob.m in Sources */,
-				ACEE9A1A1E5F25F9006A28D7 /* F53OSCBundle.m in Sources */,
-				ACEE9A0B1E5F25F9006A28D7 /* F53OSCMessage.m in Sources */,
-				ACEE9A241E5F25F9006A28D7 /* F53OSCPacket.m in Sources */,
-				ACEE9A211E5F25F9006A28D7 /* README.markdown in Sources */,
-				ACEE9A0D1E5F25F9006A28D7 /* F53OSCServer.m in Sources */,
-				ACEE9A031E5F25F9006A28D7 /* GCDAsyncSocket.m in Sources */,
-				ACEE9A0F1E5F25F9006A28D7 /* F53OSCClient.m in Sources */,
-				ACEE9A2A1E5F25F9006A28D7 /* NSDate+F53OSCTimeTag.m in Sources */,
-				ACEE9A161E5F25F9006A28D7 /* NSString+F53OSCString.m in Sources */,
-				ACEE9A1F1E5F25F9006A28D7 /* NSNumber+F53OSCNumber.m in Sources */,
-				ACEE9A091E5F25F9006A28D7 /* F53OSCParser.m in Sources */,
-				ACEE9A111E5F25F9006A28D7 /* F53OSCSocket.m in Sources */,
-				ACEE9A051E5F25F9006A28D7 /* GCDAsyncUdpSocket.m in Sources */,
-				ACEE998B1E5F2525006A28D7 /* main.swift in Sources */,
+				ACA3B08B1E5F346300AE8C30 /* F53OSCClient.m in Sources */,
+				AC4D44B21E6578E80062105C /* Tangible.swift in Sources */,
+				AC4D44A91E65717A0062105C /* TuioContainer.swift in Sources */,
+				ACA3B0951E5F346300AE8C30 /* NSData+F53OSCBlob.m in Sources */,
+				AC4D44B91E65A0430062105C /* Finger.swift in Sources */,
+				AC4D44AB1E65717A0062105C /* TuioListener.swift in Sources */,
+				AC4D44AA1E65717A0062105C /* Queue.swift in Sources */,
+				ACA3B0931E5F346300AE8C30 /* GCDAsyncUdpSocket.m in Sources */,
+				ACA3B08E1E5F346300AE8C30 /* F53OSCParser.m in Sources */,
+				ACF6F68E1EA6382200F3473C /* MyListener.swift in Sources */,
+				ACA3B08A1E5F346300AE8C30 /* F53OSCBundle.m in Sources */,
+				ACA3B08C1E5F346300AE8C30 /* F53OSCMessage.m in Sources */,
+				ACA3B0961E5F346300AE8C30 /* NSDate+F53OSCTimeTag.m in Sources */,
+				ACA3B0601E5F344300AE8C30 /* main.swift in Sources */,
+				ACA3B0971E5F346300AE8C30 /* NSNumber+F53OSCNumber.m in Sources */,
+				AC4D44A81E65717A0062105C /* TuioTime.swift in Sources */,
+				ACA3B0A21E5F3FCC00AE8C30 /* TUIOClient.swift in Sources */,
+				ACA3B0901E5F346300AE8C30 /* F53OSCSocket.m in Sources */,
+				AC4D44B41E657AC20062105C /* Point2D.swift in Sources */,
+				AC4D44AE1E65717A0062105C /* TuioObject.swift in Sources */,
+				ACA3B0921E5F346300AE8C30 /* GCDAsyncSocket.m in Sources */,
+				ACA3B0911E5F346300AE8C30 /* F53OSCTimeTag.m in Sources */,
+				AC4D44AC1E65717A0062105C /* TuioBlob.swift in Sources */,
+				AC4D44AD1E65717A0062105C /* TuioCursor.swift in Sources */,
+				ACA3B08F1E5F346300AE8C30 /* F53OSCServer.m in Sources */,
+				ACA3B08D1E5F346300AE8C30 /* F53OSCPacket.m in Sources */,
+				AC4D44A71E65717A0062105C /* TuioPoint.swift in Sources */,
+				ACA3B0981E5F346300AE8C30 /* NSString+F53OSCString.m in Sources */,
+				AC4D44B71E659F160062105C /* Manager.swift in Sources */,
+				AC4D44B01E65755E0062105C /* TUIOServer.swift in Sources */,
+				ACA3B0991E5F346300AE8C30 /* README.markdown in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		AC34F3511E5C6051007C0ABF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC34F3441E5C6051007C0ABF /* TUIOSwift */;
-			targetProxy = AC34F3501E5C6051007C0ABF /* PBXContainerItemProxy */;
-		};
-		ACEE998D1E5F252F006A28D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC34F3441E5C6051007C0ABF /* TUIOSwift */;
-			targetProxy = ACEE998C1E5F252F006A28D7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		AC34F3571E5C6051007C0ABF /* Debug */ = {
+		ACA3B0611E5F344300AE8C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -529,9 +323,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -549,20 +342,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "TUIOSwift/MetatoneOSC/TUIOSwift-Bridging-Header.h";
+				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		AC34F3581E5C6051007C0ABF /* Release */ = {
+		ACA3B0621E5F344300AE8C30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -583,9 +371,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -597,116 +384,31 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "TUIOSwift/MetatoneOSC/TUIOSwift-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AC34F35A1E5C6051007C0ABF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = J649878CHW;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TUIOSwift/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.mirkofetter.TUIOSwift;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TUIOSwift/MetatoneOSC/TUIOSwift-Bridging-Header.h";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		AC34F35B1E5C6051007C0ABF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = J649878CHW;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TUIOSwift/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.mirkofetter.TUIOSwift;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TUIOSwift/MetatoneOSC/TUIOSwift-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		AC34F35D1E5C6051007C0ABF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = J649878CHW;
-				INFOPLIST_FILE = TUIOSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.mirkofetter.TUIOSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		AC34F35E1E5C6051007C0ABF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = J649878CHW;
-				INFOPLIST_FILE = TUIOSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.mirkofetter.TUIOSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		ACEE993C1E5EEE12006A28D7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				DEVELOPMENT_TEAM = J649878CHW;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				OTHER_CFLAGS = "-Objc";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ACA3B0641E5F344300AE8C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = J649878CHW;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TUIOSwift/MetatoneOSC/TUIOSwift-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		ACEE993D1E5EEE12006A28D7 /* Release */ = {
+		ACA3B0651E5F344300AE8C30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = J649878CHW;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				OTHER_CFLAGS = "-Objc";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "TUIOSwift/MetatoneOSC/TUIOSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -715,43 +417,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC34F33F1E5C6051007C0ABF /* Build configuration list for PBXProject "TUIOSwift" */ = {
+		ACA3B0571E5F344300AE8C30 /* Build configuration list for PBXProject "TUIOSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC34F3571E5C6051007C0ABF /* Debug */,
-				AC34F3581E5C6051007C0ABF /* Release */,
+				ACA3B0611E5F344300AE8C30 /* Debug */,
+				ACA3B0621E5F344300AE8C30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC34F3591E5C6051007C0ABF /* Build configuration list for PBXNativeTarget "TUIOSwift" */ = {
+		ACA3B0631E5F344300AE8C30 /* Build configuration list for PBXNativeTarget "TUIOSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC34F35A1E5C6051007C0ABF /* Debug */,
-				AC34F35B1E5C6051007C0ABF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AC34F35C1E5C6051007C0ABF /* Build configuration list for PBXNativeTarget "TUIOSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC34F35D1E5C6051007C0ABF /* Debug */,
-				AC34F35E1E5C6051007C0ABF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACEE993B1E5EEE12006A28D7 /* Build configuration list for PBXNativeTarget "ClientTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACEE993C1E5EEE12006A28D7 /* Debug */,
-				ACEE993D1E5EEE12006A28D7 /* Release */,
+				ACA3B0641E5F344300AE8C30 /* Debug */,
+				ACA3B0651E5F344300AE8C30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AC34F33C1E5C6051007C0ABF /* Project object */;
+	rootObject = ACA3B0541E5F344300AE8C30 /* Project object */;
 }

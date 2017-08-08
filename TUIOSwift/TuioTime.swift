@@ -285,4 +285,16 @@ class TuioTime {
     func getFrameID() -> CLong {
         return frame_id;
     }
+    
+    static func getSystemTimeMillis()->CLong{
+        //ToDo check if this equals Java 	long usec = System.nanoTime()/1000;
+        //--
+        let time = mach_absolute_time();
+        var timeBaseInfo = mach_timebase_info_data_t()
+        mach_timebase_info(&timeBaseInfo)
+        let elapsedNano = (time * UInt64(timeBaseInfo.numer) / UInt64(timeBaseInfo.denom))/1000;
+        return  CLong(elapsedNano);
+        
+        
+    }
 }

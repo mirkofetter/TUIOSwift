@@ -5,10 +5,10 @@
     //  Created by Mirko Fetter on 21.02.17.
     //  Copyright © 2017 grugru. All rights reserved.
     //
-
+    
     import Foundation
-
-
+    
+    
     /**
      * The TuioListener interface provides a simple callback infrastructure which is used by the {@link TuioClient} class
      * to dispatch TUIO events to all registered instances of classes that implement the TuioListener interface defined here.<P>
@@ -27,9 +27,10 @@
      * @version 0.9
      *
      * 1:1 Swift port of the TUIO 1.1 Java Library by Martin Kaltenbrunner
-
+     
      */
     protocol TuioListener {
+        
         
         /**
          * This callback method is invoked by the TuioClient when a new TuioObject is added to the session.
@@ -100,3 +101,4 @@
          */
         func refresh( ftime:TuioTime);
     }
+    
